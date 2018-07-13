@@ -185,8 +185,7 @@ inline void ErasePEHeaderFromMemory()
 // ***********************************************************************************************
 
 inline bool CheckProcessDebugFlags()
-{
-	// Much easier in ASM but C/C++ looks so much better
+
 	typedef NTSTATUS(WINAPI *pNtQueryInformationProcess)
 		(HANDLE, UINT, PVOID, ULONG, PULONG);
 
